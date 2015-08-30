@@ -1,0 +1,53 @@
+/* Shared basic classes */
+.center {
+  text-align: center;
+}
+.profile-photo {
+  margin: 10px 0px 10px 10px;
+  height: 120px;
+}
+.round {
+  border-radius: 50% !important;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
+.aliceblue {
+  background-color: aliceblue;
+}
+.lightblue {
+  background-color: lightblue;
+}
+.antiquewhite {
+  background-color: antiquewhite;
+}
+.bisque {
+  background-color: bisque;
+}
+.justified {
+  text-align: justify;
+}
+
+.table {
+  display:table;
+  .row {
+    display:table-row;
+    .cell {
+      display: table-cell;
+    }
+  }
+}
+
+/* Responsive: small devices */
+@media screen and (max-width: 320px) {
+  .profile-photo {
+    // height: 200px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .profile-photo {
+    height: 200px;
+  }
+}

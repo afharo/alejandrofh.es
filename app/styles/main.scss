@@ -1,0 +1,277 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "fullpage.js/jquery.fullPage.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+}
+
+/* Custom page header */
+.header {
+  // border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  bottom: auto;
+  top:0;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+  .profile-logo {
+    float: left;
+    height: 30px;
+    margin: 10px 0px 10px 10px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  background-color: white;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  bottom: 0;
+  top:auto;
+
+  .contact-info {
+    float:right;
+    a {
+      color: grey;
+      font-weight: normal;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  .container {
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+    // max-height: 90%;
+  }
+}
+
+// .fp-tableCell {
+//   vertical-align: top;
+// }
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 0;
+  margin-bottom: auto;
+  width: 100%;
+  font-size: 14px;
+
+  .glyphicon {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+  .lead {
+    a {
+      color: grey;
+      font-weight: normal;
+    }
+    .glyphicon {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+
+  h1 {
+    font-weight: normal;
+  }
+
+  .contact-info {
+    a {
+      color: grey;
+      font-weight: normal;
+    }
+  }
+
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Skills styles */
+.skills {
+  vertical-align: middle;
+  font-size: 14px;
+  p {
+    font-weight: bold;
+  }
+  img {
+    height: 90px;
+  }
+  .logos {
+    img {
+      height: 30px;
+    }
+  }
+}
+
+.companies {
+  vertical-align: middle;
+  img {
+    height: 50px;
+  }
+}
+
+.cv {
+  vertical-align: middle;
+  img {
+    height: 90px;
+  }
+}
+
+contact-info {
+  font-size: 24px;
+}
+
+a {
+  color: black;
+}
+
+contact-info-extended {
+  font-size: 24px;
+  text-align:left;
+  color:black;
+  a {
+    color: black;
+  }
+}
+
+/* Shared basic classes */
+@import "./basic.scss";
+
+/* Responsive: small devices */
+@media screen and (max-width: 320px) {
+  .jumbotron {
+    font-size: 12px;
+    h1 {
+      font-size: 17px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .lead {
+      .glyphicon {
+        font-size: 10px;
+      }
+    }
+  }
+  /* Skills styles */
+  .skills {
+    vertical-align: middle;
+    font-size: 14px;
+    p {
+      font-weight: bold;
+    }
+    img {
+      width: 90px;
+      height: auto;
+    }
+    .logos {
+      font-size: 11px;
+      img {
+        width: 40px;
+        height: auto;
+      }
+    }
+  }
+  .companies {
+    vertical-align: middle;
+    img {
+      width: 90px;
+      height: auto;
+    }
+  }
+  .cv {
+    vertical-align: middle;
+    font-size: 12px;
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    font-size: 16px;
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
