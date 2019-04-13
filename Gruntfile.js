@@ -279,8 +279,7 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>',
           '<%= yeoman.dist %>/images',
           '<%= yeoman.dist %>/styles',
-          '<%= yeoman.dist %>/assets',
-          '<%= yeoman.dist %>/cv'
+          '<%= yeoman.dist %>/assets'
         ],
         patterns: {
           js: [[/(images\/[^''""]*\.(png|jpg|jpeg|gif|webp|svg))/g, 'Replacing references to images']]
@@ -399,6 +398,7 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'images/{,*/}*.{webp}',
+            'assets/fullpage.js',
             'cv/*.*',
             'styles/fonts/{,*/}*.*'
           ]
@@ -411,6 +411,16 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '.',
+          src: 'bower_components/fullpage.js/*.{js,css}',
+          dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '.',
+          src: 'bower_components/fullpage.js/vendors/*.{js,css}',
           dest: '<%= yeoman.dist %>'
         }]
       },
