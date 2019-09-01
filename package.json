@@ -10,7 +10,7 @@
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-compass": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-htmlmin": "^3.1.0",
@@ -22,7 +22,7 @@
     "grunt-google-cdn": "^0.4.3",
     "grunt-karma": "*",
     "grunt-newer": "^1.1.0",
-    "grunt-ng-annotate": "^0.9.2",
+    "grunt-ng-annotate": "^3.0.0",
     "grunt-svgmin": "^6.0.0",
     "grunt-usemin": "^3.0.0",
     "grunt-wiredep": "^3.0.1",
@@ -41,5 +41,8 @@
     "test": "npx grunt test",
     "build": "npx grunt",
     "serve": "npx grunt serve"
+  },
+  "dependencies": {
+    "serve-static": "^1.14.1"
   }
 }
