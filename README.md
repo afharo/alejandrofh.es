@@ -7,8 +7,8 @@ version 0.12.1. To update it, follow the installing instructions in this generat
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `npm run build` for building and `npm run serve` for preview.
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+Running `npm test` will run the unit tests with karma.
