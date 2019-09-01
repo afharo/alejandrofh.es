@@ -398,7 +398,7 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'images/{,*/}*.{webp}',
-            'assets/fullpage.js',
+            // 'assets/fullpage.js',
             'cv/*.*',
             'styles/fonts/{,*/}*.*'
           ]

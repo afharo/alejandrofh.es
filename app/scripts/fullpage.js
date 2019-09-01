@@ -1,9 +1,16 @@
-(function () {
-  'use strict';
+/*jshint unused:false*/
+'use strict';
 
+var fullPageInitialised = false;
+
+function initFullPage() {
   $(document).ready(function() {
     if ($.fn.fullpage && $.fn.fullpage.destroy) {
       $.fn.fullpage.destroy('all');
+    }
+
+    if (fullPageInitialised) {
+      return;
     }
     $('#fullpage').fullpage({
         // //Navigation
@@ -87,4 +94,4 @@
     $(".fp-controlArrow.fp-prev").attr('style','top: 70%;left: 25px;border: none;');
     // $(".fp-controlArrow.fp-prev").attr("style","left:0px");
   });
-})();
+}

@@ -1,4 +1,4 @@
-// jshint ignore: start
+/*jshint unused:false*/
 'use strict';
 
 function getLocale () {

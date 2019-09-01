@@ -1,4 +1,5 @@
 /*global getLocale:false*/
+/*global initFullPage:false*/
 'use strict';
 
 /**
@@ -11,4 +12,8 @@
 angular.module('alejandrofhesApp')
   .controller('MainCtrl', ['$scope', function ($scope) {
     $scope.lang = getLocale();
+    // Setting timeout so it goes to the next tick in the scheduler
+    setTimeout(function () {
+      initFullPage();
+    }, 0);
  }]);
