@@ -36,9 +36,7 @@ module.exports = function(config) {
       'bower_components/angular-translate/angular-translate.js',
       'bower_components/jquery/dist/jquery.js',
       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-      'bower_components/fullpage.js/jquery.fullPage.js',
-      'bower_components/fullpage.js/vendors/jquery.easings.min.js',
-      'bower_components/fullpage.js/vendors/jquery.slimscroll.min.js',
+      'bower_components/fullpage.js/dist/jquery.fullpage.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",
