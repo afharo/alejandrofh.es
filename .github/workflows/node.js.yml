@@ -26,6 +26,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.45.0
+        with:
+          ruby-version: 2
       - name: Install Compass
         run: gem install compass
       - name: Install Bower deps
